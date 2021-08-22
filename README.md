@@ -1,5 +1,5 @@
 # What is this?
-My implementation for integer vector in C
+My implementation for integer vector in C.\
 It's still missing important feature tho, like 'popback', etc.
 
 # How do i use this?
