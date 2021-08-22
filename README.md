@@ -7,7 +7,7 @@ Just clone this repo and include ivector.h into your program.
 
 # Example
 
-``` 
+``` C
 
 #include <stdio.h>
 #include "include/ivector.h"
