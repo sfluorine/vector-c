@@ -28,3 +28,6 @@ int main()
 
 
 ```
+
+# Note
+This is just for integer only, soon i will add other data types.
