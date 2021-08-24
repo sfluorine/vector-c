@@ -20,11 +20,6 @@ sVector sVectorInit()
     return buffer;
 }
 
-void sVectorFree(sVector * vector)
-{
-    free(vector->data);
-}
-
 void sVectorReserve(sVector * vector, int size)
 {
     vector->capacity += size;
@@ -44,6 +39,11 @@ void sVectorPushback(sVector * vector, char * data)
         vector->data[vector->size] = data;
         vector->size++;
     }
+}
+
+void sVectorFree(sVector * vector)
+{
+    free(vector->data);
 }
 
 #endif // SVECTOR_H_

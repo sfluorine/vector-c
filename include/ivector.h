@@ -24,13 +24,7 @@ iVector iVectorInit()
 void iVectorReserve(iVector * vector, int size)
 {
     vector->capacity += size;
-    int * temp = malloc(sizeof(int) * vector->capacity);
-
-    for (size_t i = 0; i < vector->size; i++)
-        temp[i] = vector->data[i];
-
-    free(vector->data);
-    vector->data = temp;
+    vector->data = realloc(vector->data, sizeof(int) * vector->capacity);
 }
 
 void iVectorPushback(iVector * vector, int data)
